@@ -51,7 +51,7 @@ const updatePrice = (id, value) => {
   const convertPrice = parseFloat(value);
   const total = convertedOldPrice + convertPrice;
   // document.getElementById(id).innerText = Math.round(total);
-  document.getElementById(id).innerText = total; // here i change this above line into it
+  document.getElementById(id).innerText = total.toFixed(2); // here i change this above line into it
   updateTotal()
 };
 
